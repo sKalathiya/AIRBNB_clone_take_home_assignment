@@ -1,0 +1,55 @@
+---
+description: Specific functional constraints and target UI specs for the Airbnb Listing page clone.
+alwaysApply: true
+---
+
+# Project Specification: Airbnb Clone Task
+
+## Target Reference URL
+
+- Reference Target: `https://airbnb-clone-umber-two.vercel.app`
+  Do not use any other github reference or any other websites for reference. The only allowed reference for this project is the given reference target which is `https://airbnb-clone-umber-two.vercel.app`
+- Scope: Desktop view only (Ignore mobile responsive layouts entirely).
+
+## Key Core Views to Implement
+
+1. **Listing Page Component:**
+   - Standard navigation bar (Header search bar mockup, user profile dropdown mockup).
+   - Title & Quick Info bar (Rating, review count, location share/save links).
+   - Main Photo Mosaic Grid: 1 large hero photo on left, 2x2 smaller stacked grid on right.
+   - Floating Sticky Widget: Price calculation container.
+   - Text Blocks: Host info, descriptions, feature grids, list layout for Reviews.
+
+2. **Photo Tour Component:**
+   - Triggers when clicking "Show all photos" button on the Main Grid or any of the Mosaic Grid photos.
+   - Full screen, white background scrollable overlay.
+   - Clean column list of all project property images.
+   - Sticky context sub-header with property short details.
+
+3. **Lightbox Component:**
+   - Triggers when clicking _any_ individual photo inside the Photo Tour layout.
+   - Center aligned active single image viewport.
+   - Exact focus controls: Left/Right navigational buttons, index counter (e.g., 3 / 20).
+   - Must handle Esc key event loops gracefully without blowing out memory stacks.
+
+## Animation & Micro-interaction Bounds
+
+- All overlay models must slide in smoothly using Framer Motion (`y: 100` to `y: 0` or subtle scale steps).
+- Main Grid photos must use a slight image zoom scale on hover (`scale-105` inside an `overflow-hidden` container) with a subtle darken overlay.
+- Interactive action items (buttons, icons, share clicks) must apply immediate focus indicator borders matching standard Airbnb layout behaviors.
+
+## Asset Configuration Specs
+
+- Mock local images inside an `@assets` folder using standard royalty-free landscape mock data if direct reference scraping is locked out.
+- Do not add random extra properties, items, comments, or test boilerplate. Keep the codebase clean and ready for production submission.
+
+## Delivery
+
+- Submitted a zip file of the whole codebase and a @prompt-log.mdc file which contains all the logs of the prompts used.
+- No git repository initialization or pushing code to git.
+
+## Major constraint
+
+Any direct lift and shift of the codebase from the reference url in @requirements.mdc could result in lower score or disqualification.
+
+No plagiarized content.

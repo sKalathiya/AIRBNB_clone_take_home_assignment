@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { FocusEvent, MouseEvent } from "react";
 import { assets } from "../../assets/asset";
 import { reviewsSection } from "../../assets/data";
-import { LaurelMark } from "./listing-icons";
+
 
 const listingFont =
   '"Airbnb Cereal VF", Circular, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", sans-serif';

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { listingCalendar } from "../../assets/data";
 
 type VisibleMonth = (typeof listingCalendar.visibleMonths)[number];
